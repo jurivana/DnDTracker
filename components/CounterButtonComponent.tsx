@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
-import { IconButton, useTheme } from 'native-base';
+import { Button, IconButton, useTheme } from 'native-base';
 import React, { useState } from 'react';
 
 interface CounterButtonProps {
@@ -13,13 +13,17 @@ interface CounterButtonProps {
 const CounterButtonComponent = (props: CounterButtonProps) => {
   const { colors } = useTheme();
   const icon = props.value > 0 ? faPlusCircle : faMinusCircle;
-  console.log(props);
 
   return (
-    <IconButton
-      icon={<FontAwesomeIcon icon={icon} size={props.size} color={colors.lightText} />}
+    <Button
       isDisabled={props.disabled}
-      onPress={props.onPress}></IconButton>
+      onPress={props.onPress}
+      bg='transparent'
+      _disabled={{
+        bg: 'transparent'
+      }}>
+        <FontAwesomeIcon icon={icon} size={props.size} color={colors.lightText} />
+    </Button>
   );
 };
 

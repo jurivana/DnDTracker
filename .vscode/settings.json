@@ -3,21 +3,13 @@
     {
       "splitTerminals": [
         {
-          "name": "Emulator",
-          "commands": ["& \"$env:ANDROID_HOME/emulator/emulator.exe\" -avd Pixel_3_XL"],
-          "shouldRunCommands": false
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
           "name": "Server",
           "commands": ["npx react-native start"]
         },
         {
           "name": "Terminal",
-          "commands": ["npx react-native run-android"]
+          "commands": ["npx react-native run-android"],
+          "shouldRunCommands": false
         }
       ]
     }

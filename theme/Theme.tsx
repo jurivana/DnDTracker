@@ -15,6 +15,18 @@ const Theme = extendTheme({
       900: '#001115',
     },
     background: '#0e0e0e',
+    gold: {
+      500: '#ffe34b',
+      600: '#ffdb1a',
+    },
+    silver: {
+      500: '#dcd8d9',
+      600: '#bfbfbf',
+    },
+    copper: {
+      500: '#cd8a4b',
+      600: '#b47032',
+    },
   },
   components: {
     ScrollView: {
