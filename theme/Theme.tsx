@@ -31,7 +31,12 @@ const Theme = extendTheme({
   components: {
     ScrollView: {
       baseStyle: {
-        backgroundColor: 'background',
+        bg: 'background',
+      },
+    },
+    Box: {
+      baseStyle: {
+        bg: 'background',
       },
     },
     Text: {
@@ -44,52 +49,6 @@ const Theme = extendTheme({
     initialColorMode: 'dark',
   },
   fontConfig: {
-    Lato: {
-      normal: {
-        normal: 'Lato-Regular',
-        italic: 'Lato-Italic',
-      },
-      bold: {
-        normal: 'Lato-Bold',
-        italic: 'Lato-BoldItalic',
-      },
-      100: {
-        normal: 'Lato-Thin',
-        italic: 'Lato-ThinItalic',
-      },
-      200: {
-        normal: 'Lato-Light',
-        italic: 'Lato-LightItalic',
-      },
-      300: {
-        normal: 'Lato-Light',
-        italic: 'Lato-LightItalic',
-      },
-      400: {
-        normal: 'Lato-Regular',
-        italic: 'Lato-Italic',
-      },
-      500: {
-        normal: 'Lato-Regular',
-        italic: 'Lato-Italic',
-      },
-      600: {
-        normal: 'Lato-Regular',
-        italic: 'Lato-Italic',
-      },
-      700: {
-        normal: 'Lato-Bold',
-        italic: 'Lato-BoldItalic',
-      },
-      800: {
-        normal: 'Lato-Bold',
-        italic: 'Lato-BoldItalic',
-      },
-      900: {
-        normal: 'Lato-Black',
-        italic: 'Lato-BlackItalic',
-      },
-    },
     Sora: {
       normal: {
         normal: 'Sora-Regular',

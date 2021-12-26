@@ -8,8 +8,7 @@
         },
         {
           "name": "Terminal",
-          "commands": ["npx react-native run-android"],
-          "shouldRunCommands": false
+          "commands": ["ipconfig"]
         }
       ]
     }
