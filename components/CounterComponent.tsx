@@ -16,6 +16,8 @@ interface CounterComponentProps {
   textColor?: string;
   onDecrement: () => void;
   onIncrement: () => void;
+  onLongDecrement?: () => void;
+  onLongIncrement?: () => void;
 }
 
 const CounterComponent = (props: CounterComponentProps) => {
@@ -25,6 +27,7 @@ const CounterComponent = (props: CounterComponentProps) => {
         size={props.size * 0.5}
         value={-1}
         onPress={props.onDecrement}
+        onLongPress={props.onLongDecrement}
         disabled={props.decrDisabled ?? props.value == 0}></CounterButtonComponent>
       <Flex direction='column' mx='2'>
         <FlexIcon icon={props.icon} color={props.iconColor} size={props.size} />
@@ -38,6 +41,7 @@ const CounterComponent = (props: CounterComponentProps) => {
         size={props.size * 0.5}
         value={1}
         onPress={props.onIncrement}
+        onLongPress={props.onLongIncrement}
         disabled={props.incrDisabled ?? props.value >= (props.max ?? props.value + 1)}></CounterButtonComponent>
     </Flex>
   );

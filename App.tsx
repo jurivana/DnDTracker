@@ -1,8 +1,7 @@
+import { extendTheme, NativeBaseProvider } from 'native-base';
 import React from 'react';
 import { StatusBar } from 'react-native';
-import { NativeBaseProvider } from 'native-base';
 import Navigation from './navigation/Navigation';
-import { extendTheme } from 'native-base';
 import { Theme } from './theme/Theme';
 
 export default function App() {

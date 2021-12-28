@@ -7,6 +7,7 @@ interface CounterButtonProps {
   size: number;
   value: number;
   onPress: () => void;
+  onLongPress?: () => void;
   disabled?: boolean;
 }
 
@@ -19,6 +20,7 @@ const CounterButtonComponent = (props: CounterButtonProps) => {
       disabled={props.disabled}
       p={2.5}
       onPress={props.onPress}
+      onLongPress={props.onLongPress}
       opacity={props.disabled ? 50 : 100}
       _pressed={{ bg: 'primary.600' }}
       borderRadius={5}>
